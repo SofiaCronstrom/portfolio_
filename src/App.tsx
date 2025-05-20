@@ -2,18 +2,24 @@
 import Footer from './components/Footer'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
-import Contact from './sections/Contact'
+import About from './sections/About'
+
+import * as motion from "motion/react-client"
+
 function App() {
   
 
   return (
+    
     <>
+    <main>
     < Hero />
-    < Contact />
     < Projects />
+    < About />
+    </main>
     <Footer />
-
     </>
+  
   )
 }
 

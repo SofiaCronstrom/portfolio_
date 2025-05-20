@@ -1,22 +1,13 @@
-import { motion } from 'framer-motion'
+import Contact from "./Contact"
+
 
 const Hero: React.FC = () => {
   return (
     <section className="hero" id="hero">
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
+     
         <h1>Sofia Cronström Frontendutvecklare</h1>
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-      >
-        Jag skapar digitala gränssnitt med känsla för form och funktion.
-      </motion.p>
+        <p>I approach frontend development with structure and curiosity.</p>
+        <Contact />
     </section>
   )
 }

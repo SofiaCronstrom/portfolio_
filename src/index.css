@@ -6,13 +6,39 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #fff;
-  color: #111;
+  background-color: #F8F7E5;
+  color: #505050;
   line-height: 1.6;
 }
-
-section {
-  padding: 4rem 2rem 0.5rem 2rem;
-  max-width: 960px;
+main{
+  width: 90dvw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+ section{
+  padding: 4rem 2rem 4rem 2rem;
+ }
+  section.hero{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    aside.contact{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+  }
+   section.projects{
+      align-self: flex-end;
+      .project-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    section.about{
+      align-self: flex-end ;
+    }
+
 }
+
